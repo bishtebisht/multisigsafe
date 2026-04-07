@@ -6,10 +6,8 @@ Lock XLM behind N-of-M wallet approvals. A creator deposits funds and sets a lis
 
 | | |
 |---|---|
-| **Frontend** | `https://multisigsafe.vercel.app` |
-| **GitHub** | `https://github.com/YOUR_USERNAME/multisigsafe` |
-| **Contract** | `https://stellar.expert/explorer/testnet/contract/CAFRAAVT7ICR5UUFUGUGSWXG24PSD4VO7SZ5VBUEUCG5ZT7QQLC6GS26` |
-| **Proof TX** | `https://stellar.expert/explorer/testnet/tx/TX_HASH` |
+| *Frontend* | https://multisigsafe.vercel.app |
+| *Contract* | https://stellar.expert/explorer/testnet/contract/CAFRAAVT7ICR5UUFUGUGSWXG24PSD4VO7SZ5VBUEUCG5ZT7QQLC6GS26 |
 
 ## How It Works
 
