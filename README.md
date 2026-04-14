@@ -6,8 +6,8 @@ Lock XLM behind N-of-M wallet approvals. A creator deposits funds and sets a lis
 
 | | |
 |---|---|
-| *Frontend* | https://multisigsafe.vercel.app |
-| *Contract* | https://stellar.expert/explorer/testnet/contract/CAFRAAVT7ICR5UUFUGUGSWXG24PSD4VO7SZ5VBUEUCG5ZT7QQLC6GS26 |
+| **Frontend** | `https://multisigsafe.vercel.app` |
+| **Contract** | `https://stellar.expert/explorer/testnet/contract/CDA5MVMSB23NY56P35W7GHMMCUSW7KFRNQKXR3BYRAQEQWGRZ7BYEYYG` |
 
 ## How It Works
 
@@ -17,6 +17,16 @@ Lock XLM behind N-of-M wallet approvals. A creator deposits funds and sets a lis
 4. Owners can **revoke** at any time before execution
 5. Creator can **cancel** at any time to get refunded
 
+## Why This Project Matters
+
+This project turns a familiar real-world workflow into a verifiable on-chain primitive on Stellar: transparent state transitions, user-authenticated actions, and deterministic outcomes.
+
+## Architecture
+
+- **Smart Contract Layer**: Soroban contract enforces business rules, authorization, and state transitions.
+- **Client Layer**: React + Vite frontend handles wallet UX, transaction composition, and real-time status views.
+- **Wallet/Auth Layer**: Freighter signs every state-changing action so operations are attributable and non-repudiable.
+- **Infra Layer**: Stellar Testnet + Soroban RPC for execution; Vercel for frontend hosting.
 ## Contract Functions
 
 ```rust
@@ -46,3 +56,6 @@ count() -> u64
 chmod +x scripts/deploy.sh && ./scripts/deploy.sh
 cd frontend && npm install && npm run dev
 ```
+
+
+
